@@ -1,0 +1,7 @@
+n=10 CX gates=506  uniform-over-K: P(opt)=0.0222
+p_cx=0       P(opt)=0.2121  P(feasible)=0.686  P(K assets)=1.000
+p_cx=0.0001  P(opt)=0.2028  P(feasible)=0.659  P(K assets)=0.964
+p_cx=0.001   P(opt)=0.1363  P(feasible)=0.466  P(K assets)=0.708
+p_cx=0.003   P(opt)=0.0589  P(feasible)=0.237  P(K assets)=0.403
+p_cx=0.01    P(opt)=0.0064  P(feasible)=0.056  P(K assets)=0.140
+p_cx=0.03    P(opt)=0.0012  P(feasible)=0.018  P(K assets)=0.053

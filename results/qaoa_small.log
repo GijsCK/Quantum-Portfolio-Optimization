@@ -1,0 +1,21 @@
+n=10 seed=0 x          3.0s | P(opt) qaoa=0.0154 uniform=0.0010 | P(feas) qaoa=0.21 uniform=0.01 | found_opt qaoa=True random=True
+n=10 seed=0 xy         2.9s | P(opt) qaoa=0.2121 uniform=0.0222 | P(feas) qaoa=0.69 uniform=0.33 | found_opt qaoa=True random=True
+n=10 seed=1 x          2.4s | P(opt) qaoa=0.0160 uniform=0.0010 | P(feas) qaoa=0.21 uniform=0.01 | found_opt qaoa=True random=True
+n=10 seed=1 xy         2.6s | P(opt) qaoa=0.3281 uniform=0.0222 | P(feas) qaoa=0.68 uniform=0.33 | found_opt qaoa=True random=True
+n=10 seed=2 x          2.9s | P(opt) qaoa=0.0143 uniform=0.0010 | P(feas) qaoa=0.25 uniform=0.02 | found_opt qaoa=True random=True
+n=10 seed=2 xy         4.0s | P(opt) qaoa=0.0336 uniform=0.0222 | P(feas) qaoa=0.84 uniform=0.42 | found_opt qaoa=True random=True
+n=10 seed=3 x          2.5s | P(opt) qaoa=0.0146 uniform=0.0010 | P(feas) qaoa=0.32 uniform=0.02 | found_opt qaoa=True random=True
+n=10 seed=3 xy         3.8s | P(opt) qaoa=0.2214 uniform=0.0222 | P(feas) qaoa=0.71 uniform=0.53 | found_opt qaoa=True random=True
+n=10 seed=4 x          2.4s | P(opt) qaoa=0.0159 uniform=0.0010 | P(feas) qaoa=0.25 uniform=0.02 | found_opt qaoa=True random=True
+n=10 seed=4 xy         3.8s | P(opt) qaoa=0.0510 uniform=0.0222 | P(feas) qaoa=0.54 uniform=0.40 | found_opt qaoa=True random=True
+n=20 seed=0 x        246.8s | P(opt) qaoa=0.0031 uniform=0.0000 | P(feas) qaoa=0.17 uniform=0.00 | found_opt qaoa=True random=False
+n=20 seed=0 xy       440.5s | P(opt) qaoa=0.0588 uniform=0.0053 | P(feas) qaoa=0.75 uniform=0.31 | found_opt qaoa=True random=True
+n=20 seed=1 x        271.2s | P(opt) qaoa=0.0029 uniform=0.0000 | P(feas) qaoa=0.24 uniform=0.00 | found_opt qaoa=True random=False
+n=20 seed=1 xy       386.7s | P(opt) qaoa=0.0369 uniform=0.0053 | P(feas) qaoa=0.75 uniform=0.45 | found_opt qaoa=True random=True
+n=20 seed=2 x        359.3s | P(opt) qaoa=0.0028 uniform=0.0000 | P(feas) qaoa=0.20 uniform=0.00 | found_opt qaoa=True random=False
+n=20 seed=2 xy       636.4s | P(opt) qaoa=0.0232 uniform=0.0053 | P(feas) qaoa=0.35 uniform=0.41 | found_opt qaoa=True random=True
+n=20 seed=3 x        387.4s | P(opt) qaoa=0.0029 uniform=0.0000 | P(feas) qaoa=0.25 uniform=0.00 | found_opt qaoa=True random=False
+n=20 seed=3 xy       290.3s | P(opt) qaoa=0.0663 uniform=0.0053 | P(feas) qaoa=0.79 uniform=0.48 | found_opt qaoa=True random=True
+n=20 seed=4 x        391.2s | P(opt) qaoa=0.0032 uniform=0.0000 | P(feas) qaoa=0.22 uniform=0.00 | found_opt qaoa=True random=False
+n=20 seed=4 xy       551.4s | P(opt) qaoa=0.0227 uniform=0.0053 | P(feas) qaoa=0.74 uniform=0.41 | found_opt qaoa=True random=True
+wrote results/qaoa_small.csv

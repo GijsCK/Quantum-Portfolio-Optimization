@@ -1,0 +1,4 @@
+SCIP n=10000 limit=60s: f=-0.0382516 status=timelimit gap=1.00e+20 LB=-0.2542595 98s
+SCIP n=10000 limit=300s: f=-0.0387731 status=optimal gap=0.00e+00 LB=-0.0387731 111s
+local search x3: f=-0.0386044 634s
+SCIP warm-started, 300s: f=-0.0387731 status=optimal gap=0.00e+00 LB=-0.0387731 87s

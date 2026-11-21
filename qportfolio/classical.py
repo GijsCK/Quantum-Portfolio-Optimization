@@ -159,26 +159,31 @@ class _Moves:
         return S, -a[S] + self.nrm[S], V
 
 
-def repair(inst, x, q=0.5, max_iter=10_000):
-    """Turn any 0/1 vector into a feasible portfolio, changing as little objective as possible.
+def repair(inst, x, q=0.5, max_iter=10_000, use_objective=True):
+    """Turn any 0/1 vector into a feasible portfolio.
 
-    1. Fix the count to exactly K (greedy add/remove, violation first, objective second).
-    2. While budget or sector caps are violated, apply the swap with the best objective
-       change among those that strictly reduce the violation.
+    1. Fix the count to exactly K (greedy add/remove, violation first, then the tie-break).
+    2. While budget or sector caps are violated, apply a swap that strictly reduces the
+       violation. Tie-break: the best objective change (use_objective=True), or the largest
+       violation reduction (use_objective=False). The objective-blind variant is the fair
+       choice when measuring the quality of an upstream solver: the objective-aware one
+       already optimises while it repairs.
     """
     mv = _Moves(inst, q)
     x = np.asarray(x).astype(int).copy()
     while x.sum() > inst.K:
         S, dF, V = mv.removes(x)
-        x[S[np.argmin(1e6 * V + dF)]] = 0
+        x[S[np.argmin(1e6 * V + (dF if use_objective else -inst.price[S]))]] = 0
     while x.sum() < inst.K:
         U, dF, V = mv.adds(x)
-        x[U[np.argmin(1e6 * V + dF)]] = 1
+        x[U[np.argmin(1e6 * V + (dF if use_objective else inst.price[U]))]] = 1
     for _ in range(max_iter):
         V0 = mv.violation(x)
         if V0 <= 0:
             return x
         S, U, dF, V = mv.swaps(x)
+        if not use_objective:
+            dF = V
         dF = np.where(V < V0 - 1e-12, dF, np.inf)
         if not np.isfinite(dF).any():
             break

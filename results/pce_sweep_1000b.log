@@ -1,0 +1,8 @@
+n=1000 seed=3 pce         N=14 params=924 loss=-2.026 (opt -2.362) raw=0.908 ls=0.9998 835s
+n=1000 seed=3 pce-product N=14 params=924 loss=11969.835 (opt -2.362) raw=0.018 ls=0.9989 67s
+n=1000 seed=3 relax       N=1000 params=1000 loss=-2.360 (opt -2.362) raw=0.997 ls=0.9994 0s
+n=1000 seed=3 random      N=1000 params=0 loss=457549.740 (opt -2.362) raw=-0.030 ls=0.9986 0s
+n=1000 seed=4 pce         N=14 params=924 loss=-1.902 (opt -2.246) raw=0.878 ls=0.9981 756s
+n=1000 seed=4 pce-product N=14 params=924 loss=334668.842 (opt -2.246) raw=0.076 ls=0.9883 48s
+n=1000 seed=4 relax       N=1000 params=1000 loss=-2.232 (opt -2.246) raw=0.984 ls=0.9978 0s
+n=1000 seed=4 random      N=1000 params=0 loss=495046.405 (opt -2.246) raw=0.019 ls=0.9883 0s
