@@ -1,0 +1,32 @@
+{
+  "n": 10,
+  "k": 2,
+  "data_qubits": 10,
+  "counter_qubits": 2,
+  "total_qubits": 12,
+  "theta": [
+    0.3827732774971576,
+    -0.1297791739461611,
+    0.7041842358694842,
+    1.6639257351472512,
+    -1.2380696649345087,
+    0.5158396780359364,
+    -0.9197167930413985,
+    0.5979323692288847,
+    -0.34617146078440936,
+    -0.6122036000827796
+  ],
+  "max_probability_error": 3.3306690738754696e-16,
+  "nonzero_counter_mass": 5.1514195495896644e-33,
+  "joint_state_fidelity": 0.9999999999999982,
+  "all_to_all_counts": {
+    "rz": 180,
+    "cx": 110,
+    "sx": 100,
+    "x": 1
+  },
+  "all_to_all_depth": 294,
+  "parameter_seed": 10571,
+  "basis": "all-to-all rz, sx, x, cx; optimization_level=1; seed_transpiler=1701",
+  "scalable_logical_operations": "Per asset: one Ry multiplexed by b counter bits (2**b angles), then b controlled-X gates with 1 through b controls. b=ceil(log2(K+1)). The final counter is zero."
+}

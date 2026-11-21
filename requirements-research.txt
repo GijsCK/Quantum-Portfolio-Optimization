@@ -1,0 +1,8 @@
+# Versions used for the study. The organizer's environment file is requirements.txt.
+numpy==2.1.3
+scipy==1.15.3
+threadpoolctl==3.5.0
+qiskit==2.6.2
+matplotlib==3.10.0
+reportlab==4.4.9
+pytest==8.3.4
